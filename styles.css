@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    padding-right: 8rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.logo img {
+    height: 40px;
+    padding-left: 8rem;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+    margin-left: 2rem;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(245, 245, 245);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link li a:hover::before {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.text-card {
+    padding: 1rem;
+    /* background-color: red; */
+    margin-top: 100px;
+}
+
+.text-card h1{
+    font-family: cursive;
+    font-weight: 700;
+    font-size:35px;
+    height: 42;
+    color:rgb(67, 67, 67);
+}
+
+.text-card p {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top:30px;
+    color:rgb(67, 67, 67);
+}
+
+.btn{
+    margin-top:50px;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-start {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color:rgb(250, 234, 209);
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn-restaurant{
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    background-color:rgb(245, 245, 245);
+    font-family: monospace;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.image-card{
+    /* background-color: blue; */
+    height: 380px;
+    overflow: hidden;
+    width:100%;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    margin-top: 20px;
+    box-shadow:
+    0 -5px 15px rgba(0,0,0,0.2),
+    0 5px 15px rgba(0,0,0,0.2);
+}
+
+.footer p{
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+    height: 24px;
+    color:black;
+}
+
+.center-footer{
+    margin-top:40px;
+
+}
+
+.right-footer{
+    margin-top:40px;
+
+}
