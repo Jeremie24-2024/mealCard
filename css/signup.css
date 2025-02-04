@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 2rem;
+    padding-right: 8rem;
+    /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 1000;
+}
+
+
+.logo img {
+    height: 40px;
+    padding-left: 8rem;
+}
+
+.nav-link {
+    display: flex;
+    list-style: none;
+}
+
+.nav-link li {
+    margin-left: 2rem;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: black;
+    font-family: cursive;
+    font-weight: 600;
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+.nav-link li a::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: rgb(245, 245, 245);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-link li a:hover::before {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+    padding-top:6rem;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    height: 30px;
+    margin-top: 60px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .form-group {
+    width: 50%;
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #333;
+    font-family:Trebuchet MS;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px transparent;
+    border-radius: 4px;
+    font-size: 14px;
+    background-color:rgb(245, 245, 245);
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #add8e6;
+    background-color: white;
+    box-shadow: 0 0 5px rgba(173, 216, 230, 0.2);
+}
+
+.create-account {
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(76, 86, 173);
+    color: black;
+    border: 3px solid transparent; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 70px;
+    transition: all 0.3s ease; 
+}
+
+.create-account:hover {
+    background-color: white;
+    border: 2px solid lightblue; 
+}
+
+
+.image-card {
+    width: 80%;
+    margin-top: 70px;
+}
+
+.image-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    background-color: rgb(245, 245, 245);
+    color: black;
+    margin-top: 30px;
+    box-shadow:
+    0 -5px 15px rgba(0,0,0,0.2);
+}
+
+.footer p{
+    font-family: monospace;
+    font-size: 16px;
+    font-weight: 500;
+    height: 24px;
+    color:black;
+}
+
+.center-footer{
+    margin-top:40px;
+
+}
+
+.right-footer{
+    margin-top:40px;
+
+}
+
+
